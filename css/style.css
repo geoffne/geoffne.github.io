@@ -456,12 +456,12 @@
 .full-toc .full .min:before {
   float: left;
   width: 50%;
-  content: "\e98b";
+  content: "F";
 }
 .full-toc .full .max:before {
   float: left;
   width: 50%;
-  content: "\e98c";
+  content: "H";
 }
 .full-toc #rocket {
   position: fixed;
@@ -472,8 +472,9 @@
   z-index: 21;
   display: none;
   opacity: 0;
-  transition: opacity 0.8s, bottom 0.8s;
 }
+.full-toc #rocket #transition opacity .8s,
+.full-toc #rocket bottom .8s,
 .full-toc #rocket:hover {
   opacity: 1;
 }
@@ -481,7 +482,7 @@
   color: #449fdb;
 }
 .full-toc #rocket:before {
-  content: "\e900";
+  content: "UP";
   position: absolute;
   bottom: 0;
   right: -4px;
@@ -1655,35 +1656,6 @@ h2 {
 }
 .nav:hover .semicircle {
   margin-left: 0;
-}
-.hide-list {
-  width: 20px;
-  height: 40px;
-  position: absolute;
-  z-index: 30;
-  left: auto;
-  right: -20px;
-  top: 50vh;
-  overflow: hidden;
-  transition: left 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-}
-.hide-list.fullscreen .brackets.first {
-  display: none;
-}
-.hide-list .semicircle {
-  width: 20px;
-  height: 40px;
-  border-radius: 0 100px 100px 0;
-  background-color: #42b983;
-  cursor: pointer;
-  margin-left: -20px;
-  transition: margin-left 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-}
-.hide-list .semicircle .brackets {
-  color: #fff;
-  padding-top: 12px;
-  padding-left: 4px;
-  font-weight: bolder;
 }
 div.img_max {
   position: fixed;
