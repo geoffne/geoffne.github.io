@@ -1,8 +1,224 @@
-{% extends "_layout.swig" %}
-{% import '_partial/post.swig' as postPage %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>Geoffne</title>
+    
+<link rel="stylesheet" href="/css/style.css">
 
-{% block title %} {{ page.title }} · {{ config.title }} {% endblock %}
+    
+<link rel="stylesheet" href="/css/gitment.css">
 
-{% block main %}
-    {{ postPage.render(page) }}
-{% endblock %}
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_859455_eaq7v6w8ktj.css">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+<header class="header">
+    <div class="header-inner">
+        <div class="header-title">
+
+        </div>
+        <nav class="header-nav">
+            
+            <a href="/" class="header-nav-link" >
+                首页
+            </a>
+            
+
+            
+            <a href="/archives" class="header-nav-link">
+                归档
+            </a>
+            
+
+            
+            <a href="/tags" class="header-nav-link">
+                标签
+            </a>
+            
+
+            
+            <a href="/about/" class="header-nav-link">
+                关于
+            </a>
+            
+        </nav>
+    </div>
+</header>
+<header class="mobile-header">
+    <div class="mobile-nav">
+        <div class="mobile-nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile-nav-title">
+            <a href="/" class="mobile-nav-title-link">Geoffne</a>
+        </div>
+
+    </div>
+    <nav class="mobile-menu">
+        <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-home"></i>
+                <a href="/" class="mobile-nav-link">首页</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-archive"></i>
+                <a href="/archives" class="mobile-nav-link">归档</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-tag"></i>
+                <a href="/tags" class="mobile-nav-link">标签</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-about"></i>
+                <a href="/about/" class="mobile-nav-link">关于</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="main">
+    <div class="content-inner">
+        <div class="posts">
+    <article class="post-whole">
+        <div class="post-title">
+            <h2 class="title">调查家乡特色饮食</h2>
+            <div class="post-meta">
+                <span class="post-time">2021-10-04</span>
+                
+                <span class="post-visit"> 阅读次数：<span id="busuanzi_value_page_pv"></span></span>
+            </div>
+        </div>
+        <div class="post-toc" id="post-toc">
+    <strong class="post-toc-title">目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%83%E6%9F%A5%E5%86%85%E5%AE%B9"><span class="toc-text">调查内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%83%E6%9F%A5%E7%BB%93%E6%9E%9C"><span class="toc-text">调查结果</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E8%AF%A6%E7%BB%86%E7%BB%93%E6%9E%9C"><span class="toc-text">1.详细结果</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E7%AD%9B%E9%80%89%E7%BB%93%E6%9E%9C"><span class="toc-text">2.筛选结果</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1%E8%B0%83%E6%9F%A5%E7%BE%8E%E9%A3%9F%E5%8C%BAup%E4%B8%BB%E5%92%8C%E5%8D%9A%E4%B8%BB%E7%AD%89"><span class="toc-text">2.1调查美食区up主和博主等</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E7%83%9F%E5%8F%B0%E7%84%96%E5%AD%90"><span class="toc-text">(1)烟台焖子</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E7%A6%8F%E5%BB%BA%E9%94%85%E8%BE%B9"><span class="toc-text">(2)福建锅边</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2%E8%B0%83%E6%9F%A5%E7%BD%91%E5%8F%8B"><span class="toc-text">2.2调查网友</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E8%8F%9C%E8%B1%86%E8%85%90"><span class="toc-text">(1)菜豆腐</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E8%9E%BA%E7%8B%AE%E7%B2%89"><span class="toc-text">(2)螺狮粉</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E7%B3%8D%E7%B2%91"><span class="toc-text">(3)糍粑</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-%E6%97%A9%E8%8C%B6"><span class="toc-text">(4)早茶</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-%E7%99%BD%E5%88%87%E9%B8%A1%E3%80%81%E7%83%A7%E9%B9%85"><span class="toc-text">(5)白切鸡、烧鹅</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6-%E8%92%BF%E5%AD%90%E7%B2%91%E7%B2%91"><span class="toc-text">(6)蒿子粑粑</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#7-%E9%92%B5%E9%92%B5%E9%B8%A1"><span class="toc-text">(7)钵钵鸡</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#8-%E5%85%89%E9%A5%BC"><span class="toc-text">(8)光饼</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#9-%E9%9D%A2%E7%9A%AE"><span class="toc-text">(9)面皮</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#10-%E6%B2%99%E8%8C%B6%E9%9D%A2"><span class="toc-text">(10)沙茶面</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-3%E8%B0%83%E6%9F%A5%E8%BA%AB%E8%BE%B9%E7%9A%84%E4%BA%BA"><span class="toc-text">2.3调查身边的人</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E7%83%A9%E9%9D%A2"><span class="toc-text">(1)烩面</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E8%83%A1%E8%BE%A3%E6%B1%A4"><span class="toc-text">(2)胡辣汤</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E7%81%AB%E9%94%85"><span class="toc-text">(3)火锅</span></a></li></ol></li></ol></li></ol></li></ol>
+    <div class="back-to-top" id="back-to-top">
+        <a href="javascript:void(0);">回到顶部</a>
+    </div>
+</div>
+        <div class="post-content">
+            <blockquote>
+<p>家乡，是我们出生和居住的地方；家乡是我们难以抹去的成长印迹；家乡是我们心灵栖息的归宿。家乡，承载着许许多多鲜活难忘的各类人物，千姿百态的生活方式，丰富深厚的文化记忆……</p>
+</blockquote>
+<span id="more"></span>
+<h3 id="调查内容"><a href="#调查内容" class="headerlink" title="调查内容"></a>调查内容</h3><pre><code>调查问卷：https://www.wjx.cn/vm/rX7b3Wb.aspx
+</code></pre>
+<hr>
+<h3 id="调查结果"><a href="#调查结果" class="headerlink" title="调查结果"></a>调查结果</h3><h4 id="1-详细结果"><a href="#1-详细结果" class="headerlink" title="1.详细结果"></a>1.详细结果</h4><pre><code>https://wwr.lanzoui.com/i1ILMuvi2kb 
+密码:i0oz
+</code></pre>
+<hr>
+<h4 id="2-筛选结果"><a href="#2-筛选结果" class="headerlink" title="2.筛选结果"></a>2.筛选结果</h4><h5 id="2-1调查美食区up主和博主等"><a href="#2-1调查美食区up主和博主等" class="headerlink" title="2.1调查美食区up主和博主等"></a>2.1调查美食区up主和博主等</h5><h6 id="1-烟台焖子"><a href="#1-烟台焖子" class="headerlink" title="(1)烟台焖子"></a>(1)烟台焖子</h6><p><img src="menzi.jpg"></p>
+<ul>
+<li><p>调查对象：江南大学食品研究生</p>
+</li>
+<li><p>性别：男</p>
+</li>
+<li><p>记录：烟台特色美食自然属烟台焖子排第一了，在烟台的街头巷尾，你会见到这样的地摊：一个小小的炉灶，一口平底煎锅，几张小饭桌，几只小马扎，便是这个地摊的全部家当;盆里或桶里盛着地瓜淀粉或绿豆淀粉制作的粉块，小桌上摆着几样自制的调料，就是这种小吃的全部原料。这便是烟台著名的小吃烟台焖子。</p>
+<p>烟台焖子是山东省烟台市的一道传统小吃，属于鲁菜系，该菜品用粗制地瓜淀粉做原料，将淀粉加水加热打冻，将冻切成小块，用锅煎到外边成焦状颜色由白变透明，并佐以味达美，虾油、芝麻酱、蒜汁等调料上桌即可。</p>
+</li>
+</ul>
+<hr>
+<h6 id="2-福建锅边"><a href="#2-福建锅边" class="headerlink" title="(2)福建锅边"></a>(2)福建锅边</h6><p><img src="guobian1.jpg"></p>
+<p><img src="guobian2.jpg"></p>
+<ul>
+<li><p>调查对象：b站美食区up主</p>
+</li>
+<li><p>性别：女</p>
+</li>
+<li><p>记录：锅边真的是独一无二的味道，哪里都吃不到。</p>
+<p>锅边是早餐店都有的，锅边加上油饼和油条，就是一顿早餐。</p>
+<p>有很大的锅，先热锅，然后把面糊淋在锅的两边，而不是倒锅里，淋在锅的周围淋一圈，熟了以后刮下来，刮到锅里，再加水和一点点海鲜煮成汤，味道特别鲜美。</p>
+<p>图片中碗里的是米皮，不是面，这是南方靠海特有。</p>
+<p>海鲜不是特色。</p>
+</li>
+</ul>
+<hr>
+<h5 id="2-2调查网友"><a href="#2-2调查网友" class="headerlink" title="2.2调查网友"></a>2.2调查网友</h5><h6 id="1-菜豆腐"><a href="#1-菜豆腐" class="headerlink" title="(1)菜豆腐"></a>(1)菜豆腐</h6><p><img src="caidoufu.jpg"></p>
+<ul>
+<li><p>调查对象：网友</p>
+</li>
+<li><p>性别：男</p>
+</li>
+<li><p>记录：陕西的一道传统名吃，被评为汉中四大小吃之一</p>
+<p>平民小吃</p>
+</li>
+</ul>
+<hr>
+<h6 id="2-螺狮粉"><a href="#2-螺狮粉" class="headerlink" title="(2)螺狮粉"></a>(2)螺狮粉</h6><ul>
+<li>调查对象：网友</li>
+<li>民族：壮族</li>
+<li>记录：好吃，酸辣</li>
+</ul>
+<hr>
+<h6 id="3-糍粑"><a href="#3-糍粑" class="headerlink" title="(3)糍粑"></a>(3)糍粑</h6><h6 id="4-早茶"><a href="#4-早茶" class="headerlink" title="(4)早茶"></a>(4)早茶</h6><h6 id="5-白切鸡、烧鹅"><a href="#5-白切鸡、烧鹅" class="headerlink" title="(5)白切鸡、烧鹅"></a>(5)白切鸡、烧鹅</h6><h6 id="6-蒿子粑粑"><a href="#6-蒿子粑粑" class="headerlink" title="(6)蒿子粑粑"></a>(6)蒿子粑粑</h6><ul>
+<li>口感比较好，价格亲民，外观新颖</li>
+</ul>
+<h6 id="7-钵钵鸡"><a href="#7-钵钵鸡" class="headerlink" title="(7)钵钵鸡"></a>(7)钵钵鸡</h6><p><img src="boboji.jpg"></p>
+<ul>
+<li>色香味俱全</li>
+</ul>
+<h6 id="8-光饼"><a href="#8-光饼" class="headerlink" title="(8)光饼"></a>(8)光饼</h6><h6 id="9-面皮"><a href="#9-面皮" class="headerlink" title="(9)面皮"></a>(9)面皮</h6><ul>
+<li>口感不错，价格便宜</li>
+</ul>
+<h6 id="10-沙茶面"><a href="#10-沙茶面" class="headerlink" title="(10)沙茶面"></a>(10)沙茶面</h6><ul>
+<li>酱料味道配料多</li>
+</ul>
+<hr>
+<h5 id="2-3调查身边的人"><a href="#2-3调查身边的人" class="headerlink" title="2.3调查身边的人"></a>2.3调查身边的人</h5><h6 id="1-烩面"><a href="#1-烩面" class="headerlink" title="(1)烩面"></a>(1)烩面</h6><p><img src="huimian.jpg"></p>
+<p><a href=""></a></p>
+<h6 id="2-胡辣汤"><a href="#2-胡辣汤" class="headerlink" title="(2)胡辣汤"></a>(2)胡辣汤</h6><p><a href=""></a></p>
+<h6 id="3-火锅"><a href="#3-火锅" class="headerlink" title="(3)火锅"></a>(3)火锅</h6><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.6.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.6.0/dist/mindmap.min.css">
+        </div>
+        
+    </article>
+</div>
+<div class="paginator">
+    
+        
+            <a class="prev" href="/2021/10/04/content/">
+                <i class="iconfont icon-prev"></i>
+                <span class="nav-default">Content</span>
+                <span class="nav-mobile">上一篇</span>
+            </a>
+        
+        
+    
+</div>
+<div id="comment-container"></div>
+    </div>
+</div>
+<footer class="footer-social">
+    
+
+    
+
+    
+
+    <div class="footer-copyright">
+        <p class="time-line">
+            &copy;
+            
+            
+            2021
+            &nbsp;<i class="|"></i>&nbsp;
+            <a target="_blank" href="https://github.com/geoffne">Geoffne</a>
+        </p>
+        <p class="theme-info">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>
+        </p>
+    </div>
+</footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    
+
+</script>
+</html>
